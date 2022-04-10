@@ -1,0 +1,267 @@
+/* main 主体模块制作 */
+.main {
+  width: 980px;
+  height: 455px;
+  margin-left: 220px;
+}
+.main .focus {
+  float: left;
+  position: relative;
+  width: 721px;
+  height: 455px;
+  margin-top: 10px;
+}
+.arrow-l {
+  font-family: 'icomoon';
+  font-size: 20px;
+  line-height: 40px;
+}
+.arrow-r {
+  right: 0;
+  font-family: 'icomoon';
+  font-size: 20px;
+  line-height: 40px;
+}
+.arrow-l ,
+.arrow-r {
+  position: absolute;
+  top: 50%;
+  width: 24px;
+  height: 40px;
+  margin-top: -20px;
+  background: rgba(0,0,0,0.3);
+  text-align: center;
+  color: #fff;
+}
+.circle {
+  position: absolute;
+  bottom: 10px;
+  left: 50px;
+}
+.circle li {
+  float: left;
+  width: 8px;
+  height: 8px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  margin: 0 3px;
+  border-radius: 50%;
+}
+.circle .current {
+  background-color: #fff;
+}
+
+.newflash {
+  float: right;
+  margin-top: 10px;
+  width: 250px;
+  height: 455px;
+}
+.newflash .news {
+  height: 163px;
+  border: 1px solid #ccc;
+}
+.news .news_hd {
+  height: 32px;
+  border-bottom: 1px dotted #ccc;
+  font-size: 14px;
+  line-height: 32px;
+  padding: 0 15px;
+}
+.news .news_hd a {
+  float: right;
+  font-size: 12px;
+  font-family: 'icomoon';
+}
+.news_bd {
+  margin: 10px 0 0 15px;
+}
+.news_bd li {
+  margin-bottom: 5px;
+}
+
+.lifeservice {
+  overflow: hidden;
+  height: 208px;
+  border: 1px solid #ccc;
+  border-bottom: none;
+  border-top: none;
+}
+.lifeservice ul {
+  width: 252px;
+}
+.lifeservice li {
+  position: relative;
+  float: left;
+  width: 62px;
+  height: 70px;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.lifeservice li a {
+  overflow: hidden;
+  display: block;
+  height: 100%;
+  text-align: center;
+}
+.service_ico {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background: url(../images/icons.png) no-repeat;
+  margin: 10px auto;
+}
+.service_icohuafei {
+  background-position: -17px -16px;
+}
+.bargain {
+  height: 75px;
+  margin-top: 5px;
+}
+
+.recommend {
+  height: 163px;
+  margin-top: 20px;
+  background-color: pink;
+}
+.recommend .recom_hd {
+  float: left;
+  width: 200px;
+  height: 163px;
+  background-color: #5c5251; 
+  text-align: center;
+}
+.recommend .recom_hd img{
+  margin: 30px 0 10px 0;
+}
+.recommend .recom_hd h3 {
+  font-size: 18px;
+  color: #fff;
+  font-weight: normal;
+}
+.recom_bd {
+  width: 1000px;
+  height: 163px;
+  float: left;
+  background-color: #ebebeb;
+}
+.recom_bd li {
+  float: left;
+  width: 249px;
+  height: 145px;
+  border-right: 1px solid #ccc;
+  margin-top: 10px;
+}
+.recom_bd li:last-child {
+  border-right: 0;
+}
+
+
+/* 侧边栏fixedtool */
+.fixedtool {
+  position: fixed;
+  top: 100px;
+  left: 50%;
+  margin-left: -676px;
+  width: 66px;
+  background-color: #fff;
+}
+.fixedtool .current {
+  background-color: #c81623;
+  color: #fff;
+}
+.fixedtool li {
+  height: 33px;
+  font-size: 12px;
+  text-align: center;
+  line-height: 33px;
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+}
+
+/* 楼层区floor */
+
+/* 家用电器模块 */
+.box-hd {
+  height: 30px;
+  margin-top: 25px;
+  border-bottom: 1px solid #c81623;
+}
+.box-hd h3 {
+  font-size: 18px;
+  float: left;
+  color: #c81623;
+}
+.box-hd .tab-list {
+  float: right;
+   height: 20px;
+}
+.box-hd .tab-list li {
+  float: left;
+}
+.box-hd .tab-list li a {
+  margin: 0 15px;
+}
+.box-bd {
+  height: 360px;
+}
+.box-bd li {
+  overflow: hidden;
+}
+.tab-con li {
+  float: left;
+  height: 360px;
+}
+.tab-con-list {
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+.tab-con-list li {
+  width: 86px;
+  height: 32px;
+  line-height: 32px;
+  border-bottom: 1px solid #ccc;
+  margin-left: 10px;
+  text-align: center;
+}
+.box-bd img {
+  transition: all 0.2s;
+}
+.box-bd img:hover {
+  margin-left: 8px;
+}
+.w209 {
+  width: 209px;
+  background-color: #f9f9f9;
+}
+.w329 {
+  width: 329px;
+}
+.w219 {
+  width: 219px;
+  border-right: 1px solid #ccc;
+}
+.w220 {
+  width: 220px;
+  border-right: 1px solid #ccc;
+}
+.tab-con-item {
+  border-bottom: 1px solid #ccc;
+}
+.box-xd {
+  height: 66px;
+  margin-top: 25px;
+  background-color: #f7f7f7;
+}
+.box-xd-com {
+  float: left;
+  height: 40px;
+  margin-top: 14px;
+}
+.box-xd-com li {
+  float: left;
+  height: 40px;
+  border-right: 1px dashed #ccc;
+}
+.box-xd-com li:last-child {
+  border-right: 0px;
+}

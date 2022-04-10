@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* div {
+            width: 200px;
+            height: 35px;
+            margin: 300px auto;
+        }
+        div span {
+            float: left;
+            display: block;
+            width: 50px;
+            height: 35px;
+            margin-left: 10px;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+           line-height: 35px;
+        } */
+    </style>
+</head>
+
+<body>
+    <!-- <div>
+        <span class="hour">1</span>
+        <span class="minute">2</span>
+        <span class="second">3</span>
+    </div> -->
+    <!-- 手机号码：<input type="number"><button>发送</button> -->
+
+    <button>点击</button>
+    <div></div>
+    <script>
+        // var hour = document.querySelector('.hour');
+        // var minute = document.querySelector('.minute');
+        // var second = document.querySelector('.second');
+        // var inputTime = +new Date('2022-3-21 17:30:00');
+        // countDown();
+        // //2.开启定时器
+        // setInterval(countDown,1000);
+        // function countDown() {
+        //     var nowTime = +new Date();//返回的是当前时间总的秒数
+        //     var times = (inputTime - nowTime) / 1000;//times是剩余时间总的秒数
+        //     var h = parseInt(times / 60 / 60 % 24);//时
+        //     h = h < 10 ? '0' + h : h;
+        //     hour.innerHTML = h;
+        //     var m = parseInt(times / 60 %60);//分
+        //     m = m < 10 ? '0' + m : m;
+        //     minute.innerHTML = m;
+        //     var s = parseInt(times % 60);//秒
+        //     s = s < 10 ? '0' + s : s;
+        //     second.innerHTML = s;
+        // }
+
+        // var btn = document.querySelector('button');
+        // var time = 3;//定义剩下的秒数
+        // btn.addEventListener('click',function(){
+        //     btn.disabled = true;//禁用button按钮
+        //     var timer = setInterval(function(){
+        //         if (time == 0){
+        //             //清除定时器和复原按钮
+        //             clearInterval(timer);
+        //             btn.disabled = false;
+        //             btn.innerHTML = '发送';
+        //             time = 3;//这个3需要重新开始
+        //         }else {
+        //             btn.innerHTML = time;
+        //             time--;
+        //         }
+        //     },1000);
+        // })
+
+
+
+        var btn = document.querySelector('button');
+        var div = document.querySelector('div');
+        btn.addEventListener('click', function () {
+            location.href = 'http://www.baidu.com';
+        })
+        var timer = 5;
+        setInterval(function () {
+            if (timer == 0) {
+                location.href = 'http://www.baidu.com';
+            } else {
+                div.innerHTML = '您将在' + timer + '秒钟之后跳转到首页';
+                timer--;
+            }
+        }, 1000);
+
+
+
+
+    </script>
+</body>
+
+</html>
